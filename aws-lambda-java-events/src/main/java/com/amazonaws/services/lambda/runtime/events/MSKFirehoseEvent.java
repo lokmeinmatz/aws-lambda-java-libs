@@ -37,6 +37,8 @@ public class MSKFirehoseEvent {
     @AllArgsConstructor
     public static class Record {
 
+        private String kafkaRecordKey;
+
         private ByteBuffer kafkaRecordValue;
 
         private String recordId;
